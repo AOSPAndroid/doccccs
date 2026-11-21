@@ -1,0 +1,28 @@
+{
+  "name": "doccccs",
+  "version": "1.0.0",
+  "description": "Local-first rental and mortgage dossier builder with editable country requirements, PDF drafts and ZIP export.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AOSPAndroid/doccccs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AOSPAndroid/doccccs/issues"
+  },
+  "homepage": "https://github.com/AOSPAndroid/doccccs#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

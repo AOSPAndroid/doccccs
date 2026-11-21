@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152322">
+  <meta name="description" content="Doccccs is a local-first rental and mortgage dossier builder. Generate polished document drafts, collect originals, and export a complete ZIP for any country.">
+  <meta property="og:title" content="Doccccs — the dossier studio">
+  <meta property="og:description" content="Build rental and mortgage dossier packs with editable country requirements, realistic A4 drafts, issuer originals and a complete ZIP export.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Doccccs — the dossier studio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="documents.css">
+</head>
+<body>
+  <div class="landing" id="landing">
+    <header class="site-header">
+      <a class="brand brand--dark" href="#" aria-label="Doccccs home">
+        <span class="brand__mark">D</span>
+        <span class="brand__name">doccccs</span>
+        <span class="brand__tag">dossier studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#document-library">Documents</a>
+        <a href="#privacy">Local-first</a>
+      </nav>
+      <button class="btn btn--ink" data-action="start-dossier">Start a dossier <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Rental + mortgage dossier builder</p>
+          <h1>Paperwork that<br><em>looks ready.</em></h1>
+          <p class="hero__lede">Build a complete, coherent application pack in minutes. Realistic document drafts, issuer originals, multiple applicants and a polished ZIP — for France or any country you choose.</p>
+          <div class="hero__actions">
+            <button class="btn btn--accent btn--large" data-action="start-dossier">Build my dossier <span aria-hidden="true">→</span></button>
+            <button class="btn btn--ghost btn--large" data-action="open-sample">Explore a sample</button>
+          </div>
+          <ul class="hero__proof" aria-label="Product highlights">
+            <li><strong>23</strong> document types</li>
+            <li><strong>10</strong> country kits</li>
+            <li><strong>0</strong> uploads to a server</li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-label="Sample generated documents">
+          <div class="hero__halo"></div>
+          <div class="paper-stack" id="heroDocs"></div>
+          <div class="hero-note hero-note--top"><span>01</span> Issuer originals welcome</div>
+          <div class="hero-note hero-note--bottom"><span>02</span> Every field stays editable</div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="What the builder handles">
+        <div class="marquee__track">
+          <span>Payslips</span><i></i><span>Bank statements</span><i></i><span>Tax notices</span><i></i><span>ID + passport layouts</span><i></i><span>Rent receipts</span><i></i><span>Guarantor packs</span><i></i><span>Self-employed proof</span><i></i><span>Purchase agreements</span><i></i>
+        </div>
+      </section>
+
+      <section class="section section--intro" id="how-it-works">
+        <div class="section__heading">
+          <p class="eyebrow">A calmer way to apply</p>
+          <h2>One dossier.<br>No loose ends.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card--wide">
+            <div class="feature-card__num">01</div>
+            <div class="feature-card__icon" data-icon="checklist"></div>
+            <h3>Start with the right checklist</h3>
+            <p>France rental and mortgage lists are built in, with editable country kits for everywhere else. Add, remove or re-label every requirement.</p>
+            <div class="mini-checklist">
+              <span class="mini-check mini-check--done">Proof of ID</span>
+              <span class="mini-check mini-check--done">3 payslips</span>
+              <span class="mini-check">Tax notice</span>
+            </div>
+          </article>
+          <article class="feature-card feature-card--tall">
+            <div class="feature-card__num">02</div>
+            <div class="feature-card__icon" data-icon="layers"></div>
+            <h3>Draft and original, side by side</h3>
+            <p>Generate a polished draft for documents you need to complete, and attach an issuer-issued original wherever authenticity matters.</p>
+            <div class="source-orbs">
+              <span class="source-orb source-orb--draft">Draft</span>
+              <span class="source-orb source-orb--original">Original</span>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__num">03</div>
+            <div class="feature-card__icon" data-icon="users"></div>
+            <h3>Made for more than one person</h3>
+            <p>Applicants, co-applicants and guarantors each get their own coverage, not one shared pile.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__num">04</div>
+            <div class="feature-card__icon" data-icon="archive"></div>
+            <h3>A ZIP that makes sense</h3>
+            <p>Documents are named, numbered and sorted by person and requirement, with an index and manifest.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--library" id="document-library">
+        <div class="section__heading section__heading--row">
+          <div>
+            <p class="eyebrow">The document engine</p>
+            <h2>More than a blank page.</h2>
+          </div>
+          <p class="section__side">Each layout is designed as a print-ready A4 page, not a form dumped into a template. Start from your profile, then refine every value.</p>
+        </div>
+        <div class="library-grid" id="libraryGrid"></div>
+      </section>
+
+      <section class="section country-band" id="privacy">
+        <div class="country-band__copy">
+          <p class="eyebrow eyebrow--light">Built for the whole move</p>
+          <h2>Any country.<br><em>Your rules.</em></h2>
+          <p>Choose a country kit, then make it yours. Change labels, document counts, applicant scope and monthly or annual record sets without touching a spreadsheet.</p>
+          <button class="btn btn--cream" data-action="start-dossier">Choose a country <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="country-band__facts">
+          <div class="fact"><strong>Local-first</strong><span>Your dossier lives in this browser. Files stay on your device.</span></div>
+          <div class="fact"><strong>Multi-person</strong><span>Borrowers, tenants, co-applicants and guarantors stay distinct.</span></div>
+          <div class="fact"><strong>Record sets</strong><span>Generate the last 3 payslips or 2 annual notices in one pass.</span></div>
+          <div class="fact"><strong>Real ZIP</strong><span>Every draft PDF, every uploaded original, plus a manifest.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--dark" href="#" aria-label="Doccccs home"><span class="brand__mark">D</span><span class="brand__name">doccccs</span></a>
+      <p>Editable drafts for application packs. Pair with issuer originals where required.</p>
+      <a href="https://github.com/AOSPAndroid/doccccs" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </footer>
+  </div>
+
+  <div class="app-shell" id="appShell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__top">
+        <button class="brand brand--light" data-action="go-home" aria-label="Back to home">
+          <span class="brand__mark">D</span><span class="brand__name">doccccs</span>
+        </button>
+        <button class="sidebar__close icon-btn" data-action="toggle-sidebar" aria-label="Close menu" data-icon="x"></button>
+      </div>
+      <div class="dossier-switcher" id="dossierSwitcher"></div>
+      <nav class="app-nav" id="appNav" aria-label="Dossier sections"></nav>
+      <div class="sidebar__bottom">
+        <button class="new-dossier" data-action="start-dossier"><span data-icon="plus"></span> New dossier</button>
+        <p class="sidebar__privacy"><span class="pulse-dot"></span> Saved locally in this browser</p>
+      </div>
+    </aside>
+    <div class="app-backdrop" data-action="toggle-sidebar"></div>
+    <main class="workspace">
+      <header class="app-header" id="appHeader"></header>
+      <div class="app-main" id="appMain"></div>
+    </main>
+  </div>
+
+  <div class="modal-root" id="modalRoot"></div>
+  <div class="toast-root" id="toastRoot" aria-live="polite"></div>
+  <div class="export-stage" id="exportStage" aria-hidden="true"></div>
+  <input class="visually-hidden" id="filePicker" type="file" multiple>
+
+  <script src="vendor/html2canvas.min.js"></script>
+  <script src="vendor/jspdf.umd.min.js"></script>
+  <script src="vendor/jszip.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
